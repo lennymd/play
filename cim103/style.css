@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap');
+/* lmd -- After you import your fonts, it's good to have the body selector */
+
+body {
+  background-color: lavenderblush;
+  /* lmd-- giving the page a fixed width really helps with making grids look complete. */
+  max-width: 1000px;
+  /* lmd-- Since you're using this font in a lot of places, it's faster to set it in the body and not have to set it everywhere else*/
+  font-family: 'Nanum Gothic', sans-serif;
+  /* lmd-- consider adding some line-height to make the paragraph more readable. */
+  line-height: 1.65;
+}
+/* lmd-- this little bit of css is very useful with grids because it makes the picture respect the size of the columns you set up. It also helped me see that your images at the bottom of the page are going to be hard to make the same size out of the box because 2 are horizontal and 1 is vertical. Maybe we can try something like how you rounded the images. Look all the way at the end of the CSS for something that might work.*/
+img {
+  width: 100%;
+}
+h1 {
+  font-size: 72px;
+  font-weight: 900;
+  text-align: center;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  background-color: #ffccdd;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.specialWord {
+  /* lmd-- since you set the font-size in the h1 part, you don't need to do it here */
+  /* font-size: 72px; */
+  font-family: 'Dancing Script', cursive;
+}
+
+.Greenwich {
+  display: block;
+  /* margin-left: auto;
+  margin-right: auto; */
+  /* lmd-- in this case I would just use the margin property to write a little less  */
+  margin: 0 auto;
+  width: 90%;
+}
+
+figcaption {
+  text-align: left;
+  font-size: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+  padding: 10px;
+}
+
+/*Image came from (https://stantonhouseinn.com/blog/best-beaches-near-greenwich-ct) */
+
+.About {
+  text-align: left;
+  font-size: 23px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+  padding: 0px;
+}
+
+/* lmd -- It doesn't seem like you're using this CSS, so I commented it out for you */
+/* .food {
+  padding: 100px;
+} */
+
+/* lmd -- making these images smaller makes them better fit on the page. I also renamed the class so it made a little more sense */
+.round-image {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center;
+}
+
+/* Circular image code came from (https://codepen.io/chris9753/pen/ZwpxQX) */
+
+.gridContainer3x1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  justify-items: center;
+}
+
+.gridContainer3x3 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  /* lmd-- because your rows are so short the text was overflowing so I tried to make them bigger */
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 10px;
+  font-size: 22px;
+}
+
+.mealType {
+  font-size: 45px;
+  font-weight: 900;
+}
+
+/* lmd -- for group1 through group9 you are repeating the same styles. We could make this easier to do by using commas in the selector like I do below: */
+.group1,
+.group2,
+.group3,
+.group4,
+.group5,
+.group6,
+.group7,
+.group8,
+.group9 {
+  background-color: lavenderblush;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+h2 {
+  font-size: 50px;
+  font-weight: 900;
+  text-align: left;
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+  /* lmd-- for padding, the right one to use is 0 instead of 0px */
+  padding: 0;
+  text-align: center;
+}
+
+/* lmd-- so far I see you've used 1 3x1 grid and 1 3x3 grid. Can you change this 3x1 grid into something else? Maybe a 3x2 grid with the names in one row and the pictures in another*/
+.GridContainer3x1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  justify-items: center;
+  text-align: center;
+  /* gap: 10px; */
+}
+
+/* lmd -- the same thing for group1 through group9: if the styles are the same we can keep them together like this or use a single class name for all three. */
+.coffee,
+.bar,
+.fat {
+  /*   width: 200px;
+  height: 400px;
+  object-fit: cover; */
+  width: 100%;
+}
+/* 
+.bar {
+  width: 200px;
+  height: 400px;
+  object-fit: cover;
+}
+
+.fat {
+  width: 200px;
+  height: 400px;
+  object-fit: cover;
+} */
+
+.writing {
+  font-size: 16px;
+}
+
+.title {
+  font-size: 22px;
+}
+
+.thirdgridContainer3x1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  justify-items: center;
+  gap: 10px;
+  background-color: #ffccdd;
+}
+
+.review {
+  font-size: 16px;
+  text-align: center;
+}
+
+/* making images square */
+.square-image {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  object-position: center;
+  text-align: center;
+}
