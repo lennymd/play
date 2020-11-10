@@ -11,7 +11,7 @@ for a_year in years:
     for a_month in months:
         for a_day in days:
             date = "-".join([str(a_year), str(a_month), str(a_day)])
-            file_path = "./basketball/gamedays/"+date+"_box_scores.csv"
+            file_path = "./gamedays/"+date+"_box_scores.csv"
             if path.exists(file_path):
                 pass
             else:
@@ -20,8 +20,9 @@ for a_year in years:
                     output_type=OutputType.CSV, 
                     output_file_path=file_path
                 )   
+                print(date,"done")
                 sleep(0.5)
-            print(date,"done")
+            
 
 
 
