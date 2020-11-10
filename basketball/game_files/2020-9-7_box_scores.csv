@@ -1,0 +1,5 @@
+team,minutes_played,made_field_goals,attempted_field_goals,made_three_point_field_goals,attempted_three_point_field_goals,made_free_throws,attempted_free_throws,offensive_rebounds,defensive_rebounds,assists,steals,blocks,turnovers,personal_fouls,points,outcome
+LOS ANGELES CLIPPERS,240,41,75,11,31,20,26,3,38,23,7,4,17,20,113,WIN
+DENVER NUGGETS,240,44,94,11,34,8,10,8,28,32,10,0,12,26,107,LOSS
+BOSTON CELTICS,240,38,77,11,34,24,27,4,41,23,5,6,11,19,111,WIN
+TORONTO RAPTORS,240,33,85,12,40,11,13,10,26,19,8,5,13,24,89,LOSS

@@ -1,0 +1,5 @@
+team,minutes_played,made_field_goals,attempted_field_goals,made_three_point_field_goals,attempted_three_point_field_goals,made_free_throws,attempted_free_throws,offensive_rebounds,defensive_rebounds,assists,steals,blocks,turnovers,personal_fouls,points,outcome
+UTAH JAZZ,240,30,79,8,34,10,15,10,38,16,6,3,12,14,78,LOSS
+DENVER NUGGETS,240,31,83,8,31,10,13,8,38,21,7,4,10,18,80,WIN
+BOSTON CELTICS,240,32,76,15,38,23,25,4,40,18,6,9,17,20,102,WIN
+TORONTO RAPTORS,240,36,90,11,40,16,19,7,34,25,10,7,12,19,99,LOSS

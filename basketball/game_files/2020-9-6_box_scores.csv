@@ -1,0 +1,5 @@
+team,minutes_played,made_field_goals,attempted_field_goals,made_three_point_field_goals,attempted_three_point_field_goals,made_free_throws,attempted_free_throws,offensive_rebounds,defensive_rebounds,assists,steals,blocks,turnovers,personal_fouls,points,outcome
+HOUSTON ROCKETS,240,35,78,22,53,17,23,8,27,22,7,2,17,21,109,LOSS
+LOS ANGELES LAKERS,240,47,83,12,27,11,18,9,32,30,11,5,15,17,117,WIN
+MILWAUKEE BUCKS,265,45,92,11,35,17,22,9,37,25,10,4,12,20,118,WIN
+MIAMI HEAT,265,40,90,17,47,18,20,6,35,33,8,1,15,18,115,LOSS

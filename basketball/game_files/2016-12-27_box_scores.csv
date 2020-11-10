@@ -1,0 +1,9 @@
+team,minutes_played,made_field_goals,attempted_field_goals,made_three_point_field_goals,attempted_three_point_field_goals,made_free_throws,attempted_free_throws,offensive_rebounds,defensive_rebounds,assists,steals,blocks,turnovers,personal_fouls,points,outcome
+MEMPHIS GRIZZLIES,240,37,88,9,30,20,29,13,24,22,14,5,11,18,103,LOSS
+BOSTON CELTICS,240,41,85,12,31,19,21,14,33,30,6,7,17,24,113,WIN
+HOUSTON ROCKETS,240,41,78,17,32,24,28,10,37,23,7,5,16,22,123,WIN
+DALLAS MAVERICKS,240,36,87,15,38,20,25,12,26,22,6,5,9,18,107,LOSS
+UTAH JAZZ,240,38,75,9,26,17,24,14,25,19,6,4,19,18,102,WIN
+LOS ANGELES LAKERS,240,39,83,4,16,18,22,15,25,19,8,3,14,21,100,LOSS
+OKLAHOMA CITY THUNDER,240,42,82,5,19,17,25,14,32,21,3,4,17,21,106,WIN
+MIAMI HEAT,240,36,82,7,22,15,21,9,23,14,10,4,12,23,94,LOSS

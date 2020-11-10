@@ -1,0 +1,3 @@
+team,minutes_played,made_field_goals,attempted_field_goals,made_three_point_field_goals,attempted_three_point_field_goals,made_free_throws,attempted_free_throws,offensive_rebounds,defensive_rebounds,assists,steals,blocks,turnovers,personal_fouls,points,outcome
+LOS ANGELES LAKERS,240,35,79,14,39,18,21,10,32,25,5,4,15,14,102,WIN
+MIAMI HEAT,240,32,75,11,32,21,26,7,32,18,8,3,11,21,96,LOSS

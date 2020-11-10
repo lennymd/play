@@ -1,0 +1,9 @@
+team,minutes_played,made_field_goals,attempted_field_goals,made_three_point_field_goals,attempted_three_point_field_goals,made_free_throws,attempted_free_throws,offensive_rebounds,defensive_rebounds,assists,steals,blocks,turnovers,personal_fouls,points,outcome
+GOLDEN STATE WARRIORS,240,44,89,11,33,21,24,12,35,28,11,7,12,16,120,WIN
+BROOKLYN NETS,240,42,87,20,42,10,15,5,32,28,5,3,15,20,114,LOSS
+UTAH JAZZ,240,42,80,10,25,19,22,8,35,25,8,6,18,27,113,WIN
+DALLAS MAVERICKS,240,38,91,9,28,19,25,12,31,24,6,3,13,19,104,LOSS
+WASHINGTON WIZARDS,240,38,97,5,27,23,28,14,31,18,7,3,14,16,104,LOSS
+LOS ANGELES CLIPPERS,240,56,103,16,29,8,13,14,43,35,7,9,14,25,136,WIN
+PHOENIX SUNS,240,38,86,8,27,26,27,10,34,21,10,3,22,32,110,LOSS
+OKLAHOMA CITY THUNDER,240,43,85,7,24,24,35,9,34,22,16,3,15,24,117,WIN

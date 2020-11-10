@@ -1,0 +1,5 @@
+team,minutes_played,made_field_goals,attempted_field_goals,made_three_point_field_goals,attempted_three_point_field_goals,made_free_throws,attempted_free_throws,offensive_rebounds,defensive_rebounds,assists,steals,blocks,turnovers,personal_fouls,points,outcome
+OKLAHOMA CITY THUNDER,240,35,76,16,34,16,21,7,39,24,6,4,21,16,102,LOSS
+HOUSTON ROCKETS,240,35,88,17,49,17,19,11,33,18,11,7,12,24,104,WIN
+MIAMI HEAT,240,37,81,17,45,25,32,7,31,22,12,4,10,26,116,WIN
+MILWAUKEE BUCKS,240,37,85,7,25,33,39,17,33,16,6,2,14,25,114,LOSS
