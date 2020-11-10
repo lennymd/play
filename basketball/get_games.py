@@ -11,7 +11,7 @@ for a_year in years:
     for a_month in months:
         for a_day in days:
             date = "-".join([str(a_year), str(a_month), str(a_day)])
-            file_path = "./gamedays/"+date+"_box_scores.csv"
+            file_path = "./game_games/"+date+"_box_scores.csv"
             if path.exists(file_path):
                 pass
             else:
@@ -22,18 +22,3 @@ for a_year in years:
                 )   
                 print(date,"done")
                 sleep(0.5)
-            
-
-
-
-            
-
-# Get all season game days & scores
-# for season in seasons:
-#     years = str(season-1) +"_"+ str(season)
-#     client.season_schedule(
-#         season_end_year=season, 
-#         output_type=OutputType.CSV, 
-#         output_file_path="./basketball/seasons/"+years+"_season.csv"
-#     )
-
