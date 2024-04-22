@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Asynchronous Programming: The end of the loop</title>
+  </head>
+  <body>
+    <p>Code from an EggHead.io course</p>
+    <script>
+      function getStockSymbols(stocks) {
+        let symbols = [];
+        let counter;
+        let stock;
+
+        for (counter = 0; counter < stocks.length; counter++) {
+          stock = stocks[counter];
+          symbols.push(stock.symbol);
+        }
+        return symbols;
+      }
+      let stocks = [
+        {symbol: 'XFX', price: 240.22, volume: 23432},
+        {symbol: 'TNZ', price: 332.19, volume: 234},
+        {symbol: 'JXJ', price: 120.22, volume: 5323},
+      ];
+
+      console.log(JSON.stringify(getStockSymbols(stocks)));
+    </script>
+  </body>
+</html>
