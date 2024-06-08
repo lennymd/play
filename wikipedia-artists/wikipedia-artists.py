@@ -28,7 +28,7 @@ wiki = wikipediaapi.Wikipedia("Lenny Test Project (lennymartinezd@gmail.com)", "
 print("Loading all artists")
 painter_list = []
 with open(
-    "./wikipedia-artists/painter_list_cleaned.csv", mode="r", encoding="utf-8"
+    "./wikipedia-artists/painter_list_cleaned2.csv", mode="r", encoding="utf-8"
 ) as file:
     reader = csv.reader(file)
     for row in reader:
