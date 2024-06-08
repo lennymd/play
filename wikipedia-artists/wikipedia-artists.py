@@ -38,7 +38,7 @@ print(f"------------------\nThere are {len(painter_list)} artists in the dataset
 # PART 2 -- Get the summaries of the painters
 print("Extracting artist data")
 painter_data = [["id", "wikipedia_name", "artist_name", "summary", "url"]]
-for painter in painter_list[3001:]:
+for painter in painter_list[3121:]:
     page = wiki.page(painter)
     _index = painter_list.index(painter)
     if page.exists():
