@@ -28,36 +28,39 @@ wiki = wikipediaapi.Wikipedia("Lenny Test Project (lennymartinezd@gmail.com)", "
 print("Loading all artists")
 painter_list = []
 with open(
-    "./wikipedia-artists/painter_list_cleaned2.csv", mode="r", encoding="utf-8"
+    "./wikipedia-artists/painter_list_cleaned.csv", mode="r", encoding="utf-8"
 ) as file:
     reader = csv.reader(file)
     for row in reader:
         painter_list.append(row[0])
-print("\nLoaded all artists")
-print("------------------")
+print(f"------------------\nThere are {len(painter_list)} artists in the dataset\n")
 
 # PART 2 -- Get the summaries of the painters
-print("Getting data for artists")
-painter_data = [["wikipedia_name", "artist_name", "summary", "url"]]
-for painter in painter_list[3700:]:
+print("Extracting artist data")
+painter_data = [["id", "wikipedia_name", "artist_name", "summary", "url"]]
+for painter in painter_list[1:]:
     page = wiki.page(painter)
     _index = painter_list.index(painter)
     if page.exists():
-        print(f"Looking at number {_index+1}: {page.title}")
-        painter_data.append([painter, page.title, page.summary, page.fullurl])
+        print(f"Looking at painter number {_index}: {page.title}")
+        painter_data.append([_index, painter, page.title, page.summary, page.fullurl])
 
-    if _index % 100 == 0:
-        time.sleep(2)
-    #     with open(f"./painter_data_{_index}.csv", mode="w", encoding="utf-8") as file:
-    #         writer = csv.writer(file)
-    #         for painter in painter_data:
-    #             writer.writerow(painter)
-    #     print(f"Saved data to CSV file up to {_index}/{len(painter_list)-1}")
-    #     time.sleep(4)
+        if _index % 30 == 0:
+            print("pausing\n")
+            time.sleep(2)
+            with open(
+                f"./wikipedia-artists/painter_summary_temp_{_index}.csv",
+                mode="w",
+                encoding="utf-8",
+            ) as file:
+                writer = csv.writer(file)
+                for painter in painter_data:
+                    writer.writerow(painter)
+            print(f"Saved data to CSV file up to {_index}/{len(painter_list)-1}")
 
-with open(f"./painter_data_end.csv", mode="w", encoding="utf-8") as file:
+with open("./painter_summary_all.csv", mode="w", encoding="utf-8") as file:
     writer = csv.writer(file)
     for painter in painter_data:
         writer.writerow(painter)
-    print(f"Saved data to CSV file up to {_index}/{len(painter_list)-1}")
-    time.sleep(4)
+
+print("saved all data to CSV file")
