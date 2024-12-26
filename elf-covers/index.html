@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ELF Monthly cover</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    p {
+      text-transform: uppercase;
+      margin: 0 auto;
+      font-family: sans-serif;
+      font-size: 42px;
+      line-height: 1.6;
+    }
+
+    .page {
+      width: 21cm;
+      height: 29.7cm;
+      page-break-after: always;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+  </style>
+  <body></body>
+  <script>
+    const titles = [' ', 'Transfers', 'Checks', 'Deposits', 'Wire Transfer'];
+    const year = 2024;
+    const month = 'December';
+    const account = 'Trust';
+
+    const body = document.querySelector('body');
+    titles.forEach(title => {
+      const page = document.createElement('div');
+      page.classList.add('page');
+      page.innerHTML = `<div class="page__content"><p>ELF ${account}</span> <br /> ${year} <br /> ${month} <br /><br /><br /> ${title}</p></div>`;
+      body.appendChild(page);
+    });
+  </script>
+</html>
