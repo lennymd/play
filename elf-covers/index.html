@@ -30,45 +30,7 @@
       text-align: center;
     }
   </style>
-  <body></body>
-  <script>
-    // const titles = [' ', 'Transfers', 'Checks', 'Deposits', 'Wire Transfer'];
-    const year = 2024;
-    // const month = 'September';
-    const account = 'Operating';
-    const body = document.querySelector('body');
-
-    const title = 'Wire Transfers';
-    const months = [
-      'January',
-      'February',
-      'March',
-      'April',
-      'May',
-      'June',
-      'July',
-      'August',
-      'September',
-      'October',
-      'November',
-      'December',
-    ];
-
-    [2023, 2024].forEach(year => {
-      months.forEach(month => {
-        const page = document.createElement('div');
-        page.classList.add('page');
-        page.innerHTML = `<div class="page__content"><p>ELF ${account}</span> <br /> ${year} <br /> ${month} <br /><br /><br />${title}</p></div>`;
-        body.appendChild(page);
-      });
-    });
-    /*
-    titles.forEach(title => {
-      const page = document.createElement('div');
-      page.classList.add('page');
-      page.innerHTML = `<div class="page__content"><p>ELF ${account}</span> <br /> ${year} <br /> ${month} <br /><br /><br /> ${title}</p></div>`;
-      body.appendChild(page);
-    });
-    */
-  </script>
+  <body>
+    <script src="./script.js"></script>
+  </body>
 </html>
